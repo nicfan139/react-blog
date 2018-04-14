@@ -7,11 +7,15 @@ import Typography from 'material-ui/Typography';
 import Button from 'material-ui/Button';
 import IconButton from 'material-ui/IconButton';
 import { SimpleMenu } from './menu';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
+const FontAwesome = require('react-fontawesome');
 
 const styles = {
-  wide: {
-    width: "100vw"
+  appbarContainer: {
+    width: "100vw",
+    position: "fixed",
+    top: 0
   },
   root: {
     flexGrow: 1,
@@ -34,11 +38,13 @@ const styles = {
 export function ButtonAppBar(props) {
   const { classes } = props;
   return (
-    <div style={styles.wide}>
+    <div style={styles.appbarContainer}>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="title" color="inherit" style={styles.flex}>
-            React Blog
+            <FontAwesome name='pen-square' />
+            &nbsp;
+            <strong>React Blog</strong>
           </Typography>
           <nav style={styles.tabs}>
             <Link to='/' style={styles.tab}>Home</Link>

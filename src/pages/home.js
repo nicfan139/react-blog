@@ -6,7 +6,7 @@ export class Home extends React.Component {
   render() {
     return (
       <div>
-        <Banner title="Trending Posts"/>
+        <Banner title="Trending Posts" background="blue"/>
         <PostContainer />
       </div>
     )

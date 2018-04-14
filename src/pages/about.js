@@ -13,7 +13,7 @@ export class About extends React.Component {
   render() {
     return (
       <div style={styles}>
-        <Banner title="About"/>
+        <Banner title="About" background="lightgreen"/>
         <div style={styles.cardsContainer}>
           <AboutCard />
           <AboutCard />

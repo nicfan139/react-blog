@@ -6,7 +6,7 @@ export class FAQ extends React.Component {
   render() {
     return (
       <div>
-        <Banner title="Frequently Asked Questions" />
+        <Banner title="Frequently Asked Questions" background="orange" />
         <FaqPanel />
       </div>
     )

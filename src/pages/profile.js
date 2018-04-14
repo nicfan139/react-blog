@@ -12,7 +12,6 @@ const styles = {
     alignItems: "center"
   },
   profileAvatar: {
-    position: "absolute",
     height: 150,
     width: 150,
     borderRadius: 100,
@@ -25,6 +24,8 @@ export class Profile extends React.Component {
     return (
       <div style={styles.whiteBox}>
         <img style={styles.profileAvatar} src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt="Profile Pic"></img>
+        <h2>User</h2>
+        <p><em>Description about this user</em></p>
       </div>
     )
   }

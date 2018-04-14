@@ -9,7 +9,7 @@ const appStyle = {
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  overflowX: "hidden"
+  overflowX: "hidden",
 }
 
 export class App extends React.Component {

@@ -7,8 +7,14 @@ import { Profile } from '../pages/profile';
 import { Signup } from '../pages/signup';
 import { Login } from '../pages/login';
 
+const styles = {
+  mainContainer: {
+    marginTop: 64
+  }
+}
+
 export const Main = () => (
-  <main>
+  <main style={styles.mainContainer}>
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/about' component={About}/>
