@@ -1,8 +1,8 @@
 import React from "react";
 import { Main } from './main';
-import { ButtonAppBar } from './appbar';
-import { Banner } from './banner';
-import { Footer } from './footer';
+import { ButtonAppBar } from '../components/appbar';
+import { Banner } from '../components/banner';
+import { Footer } from '../components/footer';
 
 const appStyle = {
   display: "flex",

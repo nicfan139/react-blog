@@ -1,4 +1,5 @@
 import React from "react";
+import { SimpleSnackbar } from "./snackbar";
 
 const postStyle = {
   display: "flex",
@@ -24,7 +25,7 @@ class Post extends React.Component {
       <div style={postStyle}>
         <h2>{postTitle}</h2>
         <p style={descStyle}>{postDesc}</p>
-        <a href="#"><i className="fas fa-share-square"></i></a>
+        <SimpleSnackbar />
       </div>
     );
   }

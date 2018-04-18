@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'material-ui/Button';
-import { FormField } from '../components/formfield'
+import { FormField } from '../components/formfield';
+const FontAwesome = require('react-fontawesome');
 
 const styles = {
   background: {
@@ -14,10 +15,9 @@ const styles = {
     alignItems: "center"
   },
   whiteBox: {
-    width: 350,
-    height: 350,
     backgroundColor: "rgba(255,255,255,0.9)",
     borderRadius: 5,
+    padding: "20px 40px",
     boxShadow: "0px 2px 3px 2px rgba(50,50,50,0.4)",
     display: "flex",
     flexDirection: "column",
@@ -37,11 +37,13 @@ export class Login extends React.Component {
     return (
       <div style={styles.background}>
         <div style={styles.whiteBox}>
-          <h2 style={styles.formTitle}>Enter your credentials</h2>
+          <h2 style={styles.formTitle}>
+            Enter your credentials&nbsp;&nbsp;<FontAwesome name="sign-in-alt"/>
+          </h2>
           <FormField id="email-input" label="Email"/>
           <FormField id="password-input" label="Password"/>
           <Button variant="raised" color="primary" style={styles.submitButton}>
-            Login
+            <strong>Login</strong>
           </Button>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'material-ui/Button';
-import { FormField } from '../components/formfield'
+import { FormField } from '../components/formfield';
+const FontAwesome = require('react-fontawesome');
 
 const styles = {
   background: {
@@ -37,12 +38,14 @@ export class Signup extends React.Component {
     return (
       <div style={styles.background}>
         <div style={styles.whiteBox}>
-          <h2 styles={styles.submitButton}>Create an account</h2>
+          <h2 styles={styles.submitButton}>
+            Create an account&nbsp;&nbsp;<FontAwesome name="user-plus" />
+          </h2>
           <FormField id="name-input" label="Name"/>
           <FormField id="email-input" label="Email"/>
           <FormField id="password-input" label="Password"/>
           <Button variant="raised" color="primary" style={styles.submitButton}>
-            Sign up!
+            <strong>Sign up!</strong>
           </Button>
         </div>
       </div>
