@@ -9,7 +9,7 @@ import Typography from 'material-ui/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const styles = {
-
+  padding: "10px 0px"
 }
 
 export class FaqPanel extends React.Component {
@@ -27,7 +27,7 @@ export class FaqPanel extends React.Component {
     const { expanded } = this.state;
 
     return (
-      <div>
+      <div style={styles}>
         <ExpansionPanel expanded={expanded === 'panel1'} onChange={this.handleChange('panel1')}>
           <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
             <Typography><strong><em>What is React Blog?</em></strong></Typography>

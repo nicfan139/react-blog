@@ -6,6 +6,7 @@ const styles = {
   cardsContainer: {
     display: "flex",
     justifyContent: "space-around",
+    padding: "10px 0px"
   }
 }
 

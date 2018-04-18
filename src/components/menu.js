@@ -48,8 +48,6 @@ export class SimpleMenu extends React.Component {
           open={Boolean(anchorEl)}
           onClose={this.handleClose}
         >
-          <MenuItem><Link to='/profile' style={styles.menuLink}><FontAwesome name='user-circle' />&nbsp;&nbsp;&nbsp;Profile</Link></MenuItem>
-          <Divider />
           <MenuItem><Link to='/signup' style={styles.menuLink}><FontAwesome name='user-plus' />&nbsp;&nbsp;Sign-up!</Link></MenuItem>
           <Divider />
           <MenuItem><Link to='/login' style={styles.menuLink}><FontAwesome name='sign-in-alt' />&nbsp;&nbsp;&nbsp;Login</Link></MenuItem>
