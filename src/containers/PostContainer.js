@@ -44,16 +44,12 @@ const posts = [
   }
 ]
 
-
-export class PostContainer extends React.Component {
-
-  render() {
-    return (
-      <div>
-        { posts.map((post) =>
-          <Post title={post.title} desc={post.desc} />
-        )}
-      </div>
-    );
-  }
+export const PostContainer = (props) => {
+  return (
+    <div>
+      { posts.map((post) =>
+        <Post title={post.title} desc={post.desc} />
+      )}
+    </div>
+  )
 }
