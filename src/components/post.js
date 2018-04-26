@@ -1,5 +1,4 @@
 import React from "react";
-import { SimpleSnackbar } from "./snackbar";
 
 const styles = {
   post: {
@@ -25,7 +24,6 @@ const Post = (props) => {
     <div style={styles.post}>
       <h2>{postTitle}</h2>
       <p style={styles.desc}>{postDesc}</p>
-      <SimpleSnackbar />
     </div>
   )
 }

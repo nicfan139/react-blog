@@ -31,7 +31,7 @@ export class FormField extends React.Component {
         <TextField
           id={fieldId}
           label={fieldLabel}
-          type="password"
+          type="text"
           autoComplete="current-password"
           margin="normal"
         />

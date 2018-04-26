@@ -5,7 +5,15 @@ import IconButton from 'material-ui/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 const FontAwesome = require('react-fontawesome');
 
-export class SimpleSnackbar extends React.Component {
+const styles = {
+  link: {
+    color: "blue",
+    fontWeight: "bold",
+    cursor: "pointer"
+  }
+}
+
+export class ShareSnackbar extends React.Component {
   state = {
     open: false,
   };
@@ -25,7 +33,11 @@ export class SimpleSnackbar extends React.Component {
   render() {
     return (
       <div>
-        <a onClick={this.handleClick}><FontAwesome name="share-square" /></a>
+        <a style={styles.link} onClick={this.handleClick}>
+          <FontAwesome name="share-square" />
+          &nbsp;
+          Share this post!
+        </a>
         <Snackbar
           anchorOrigin={{
             vertical: 'bottom',

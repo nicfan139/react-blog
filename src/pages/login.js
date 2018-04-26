@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from 'material-ui/Button';
-import { FormField } from '../components/formfield';
+import { FormField } from '../components/formField';
+import { PasswordField } from '../components/passwordField';
 const FontAwesome = require('react-fontawesome');
 
 const styles = {
@@ -41,7 +42,7 @@ export class Login extends React.Component {
             Enter your credentials&nbsp;&nbsp;<FontAwesome name="sign-in-alt"/>
           </h2>
           <FormField id="email-input" label="Email"/>
-          <FormField id="password-input" label="Password"/>
+          <PasswordField id="password-input" label="Password"/>
           <Button variant="raised" color="primary" style={styles.submitButton}>
             <strong>Login</strong>
           </Button>
