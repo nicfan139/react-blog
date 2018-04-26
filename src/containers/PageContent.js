@@ -7,13 +7,13 @@ import { Signup } from '../pages/signup';
 import { Login } from '../pages/login';
 
 const styles = {
-  mainContainer: {
+  contentContainer: {
     marginTop: 64
   }
 }
 
-export const Main = () => (
-  <main style={styles.mainContainer}>
+export const PageContent = () => (
+  <div style={styles.contentContainer}>
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/about' component={About}/>
@@ -21,7 +21,5 @@ export const Main = () => (
       <Route path='/signup' component={Signup} />
       <Route path='/login' component={Login} />
     </Switch>
-  </main>
+  </div>
 )
-
-export default Main

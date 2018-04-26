@@ -1,5 +1,4 @@
 import React from 'react';
-import { withStyles } from 'material-ui/styles';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
@@ -9,16 +8,17 @@ import { Link } from 'react-router-dom';
 const FontAwesome = require('react-fontawesome');
 
 const styles = {
-  appbarContainer: {
+  navbarContainer: {
     width: "100vw",
     position: "fixed",
     top: 0
   },
-  root: {
-    flexGrow: 1,
-  },
   flex: {
     flex: 1,
+  },
+  logo: {
+    textDecoration: "none",
+    color: "white",
   },
   tabs: {
     display: "flex",
@@ -32,18 +32,19 @@ const styles = {
   }
 };
 
-export function ButtonAppBar(props) {
+export function NavBar(props) {
   return (
-    <div style={styles.appbarContainer}>
+    <div style={styles.navbarContainer}>
       <AppBar position="static">
         <Toolbar>
           <Typography variant="title" color="inherit" style={styles.flex}>
-            <FontAwesome name='pen-square' />
-            &nbsp;
-            <strong>React Blog</strong>
+            <Link to='/' style={styles.logo}>
+              <FontAwesome name='pen-square' />
+              &nbsp;
+              <strong>React Blog</strong>
+            </Link>
           </Typography>
           <nav style={styles.tabs}>
-            <Link to='/' style={styles.tab}>Home</Link>
             <Link to='/about' style={styles.tab}>About</Link>
             <Link to='/faq' style={styles.tab}>FAQ</Link>
           </nav>
@@ -53,5 +54,3 @@ export function ButtonAppBar(props) {
     </div>
   );
 }
-
-export default withStyles(styles)(ButtonAppBar);

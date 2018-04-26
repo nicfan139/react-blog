@@ -1,6 +1,6 @@
 import React from "react";
-import { Main } from './main';
-import { ButtonAppBar } from '../components/appbar';
+import { PageContent } from './PageContent';
+import { NavBar } from '../components/navbar';
 
 const appStyle = {
   display: "flex",
@@ -13,8 +13,8 @@ const appStyle = {
 export const App = () => {
   return (
     <div style={appStyle}>
-      <ButtonAppBar />
-      <Main />
+      <NavBar />
+      <PageContent />
     </div>
   )
 }
