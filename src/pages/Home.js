@@ -1,8 +1,8 @@
 import React from 'react';
-import { Banner } from '../components/banner';
-import { PostContainer } from '../containers/PostContainer';
+import Banner from '../components/Banner';
+import PostContainer from '../containers/PostContainer';
 
-export class Home extends React.Component {
+class Home extends React.Component {
   render() {
     return (
       <div>
@@ -12,3 +12,5 @@ export class Home extends React.Component {
     )
   }
 }
+
+export default Home;

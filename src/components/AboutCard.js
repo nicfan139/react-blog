@@ -22,8 +22,7 @@ const styles = {
   },
 };
 
-export function AboutCard(props) {
-
+const AboutCard = props => {
   return (
     <div>
       <Card>

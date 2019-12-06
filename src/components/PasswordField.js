@@ -15,8 +15,7 @@ const styles = theme => ({
   },
 });
 
-export class PasswordField extends React.Component {
-
+class PasswordField extends React.Component {
   handleChange = name => event => {
     this.setState({
       [name]: event.target.value,

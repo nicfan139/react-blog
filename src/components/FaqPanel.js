@@ -11,7 +11,7 @@ const styles = {
   padding: "10px 0px"
 }
 
-export class FaqPanel extends React.Component {
+class FaqPanel extends React.Component {
   state = {
     expanded: null,
   };

@@ -13,7 +13,7 @@ const styles = {
   }
 }
 
-export class ShareSnackbar extends React.Component {
+class ShareSnackbar extends React.Component {
   state = {
     open: false,
   };
@@ -68,3 +68,5 @@ export class ShareSnackbar extends React.Component {
     );
   }
 }
+
+export default ShareSnackbar;

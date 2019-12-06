@@ -1,12 +1,12 @@
 import React from 'react';
 import Button from 'material-ui/Button';
-import { FormField } from '../components/formField';
-import { PasswordField } from '../components/passwordField';
+import FormField from '../components/FormField';
+import PasswordField from '../components/PasswordField';
 const FontAwesome = require('react-fontawesome');
 
 const styles = {
   background: {
-    backgroundImage: "url('https://images.unsplash.com/photo-1510279770292-4b34de9f5c23?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aae475523c9a1ac88897f03a286fff6f&auto=format&fit=crop&w=1350&q=80')",
+    backgroundImage: "url('https://images.unsplash.com/photo-1502472584811-0a2f2feb8968?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=dcd916e8308d119631edcd7178858f46&auto=format&fit=crop&w=1350&q=80')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "90vh",
@@ -16,10 +16,9 @@ const styles = {
     alignItems: "center"
   },
   whiteBox: {
-    width: 350,
-    height: 400,
     backgroundColor: "rgba(255,255,255,0.9)",
     borderRadius: 5,
+    padding: "20px 40px",
     boxShadow: "0px 2px 3px 2px rgba(50,50,50,0.4)",
     display: "flex",
     flexDirection: "column",
@@ -34,22 +33,23 @@ const styles = {
   }
 }
 
-export class Signup extends React.Component {
+class Login extends React.Component {
   render() {
     return (
       <div style={styles.background}>
         <div style={styles.whiteBox}>
-          <h2 styles={styles.submitButton}>
-            Create an account&nbsp;&nbsp;<FontAwesome name="user-plus" />
+          <h2 style={styles.formTitle}>
+            Enter your credentials&nbsp;&nbsp;<FontAwesome name="sign-in-alt"/>
           </h2>
-          <FormField id="name-input" label="Name"/>
           <FormField id="email-input" label="Email"/>
           <PasswordField id="password-input" label="Password"/>
           <Button variant="raised" color="primary" style={styles.submitButton}>
-            <strong>Sign up!</strong>
+            <strong>Login</strong>
           </Button>
         </div>
       </div>
     )
   }
 }
+
+export default Login;

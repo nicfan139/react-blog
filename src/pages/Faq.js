@@ -1,8 +1,8 @@
 import React from 'react';
-import { Banner } from '../components/banner';
-import { FaqPanel } from '../components/faqpanel';
+import Banner from '../components/Banner';
+import FaqPanel from '../components/FaqPanel';
 
-export class FAQ extends React.Component {
+class FAQ extends React.Component {
   render() {
     return (
       <div>
@@ -12,3 +12,5 @@ export class FAQ extends React.Component {
     )
   }
 }
+
+export default FAQ;

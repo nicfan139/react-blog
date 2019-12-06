@@ -1,6 +1,6 @@
 import React from 'react';
-import { Banner } from '../components/banner';
-import { AboutCard } from '../components/card'
+import Banner from '../components/Banner';
+import AboutCard from '../components/AboutCard';
 
 const styles = {
   cardsContainer: {
@@ -10,7 +10,7 @@ const styles = {
   }
 }
 
-export class About extends React.Component {
+class About extends React.Component {
   render() {
     return (
       <div style={styles}>
@@ -25,3 +25,4 @@ export class About extends React.Component {
   }
 }
 
+export default About;

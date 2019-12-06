@@ -16,7 +16,7 @@ const styles = {
   }
 }
 
-export class SimpleMenu extends React.Component {
+class SimpleMenu extends React.Component {
   state = {
     anchorEl: null,
   };
@@ -57,3 +57,4 @@ export class SimpleMenu extends React.Component {
   }
 }
 
+export default SimpleMenu;

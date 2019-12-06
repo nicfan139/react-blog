@@ -1,6 +1,6 @@
 import React from 'react';
 import { allPosts } from '../seeds/allPosts';
-import { ShareSnackbar } from '../components/snackbar'
+import ShareSnackbar from '../components/ShareSnackbar'
 import { Link } from 'react-router-dom';
 
 const FontAwesome = require('react-fontawesome');
@@ -16,10 +16,9 @@ const styles = {
   }
 }
 
-export const PostPage = ({ match }) => {
+const PostPage = ({ match }) => {
   // Use the ID from URL to find the Object containing the Post's content
-  const findPostContent = allPosts.filter((post) => post.postId == match.params.postId);
-  const postContent = findPostContent[0];
+  const postContent = allPosts.find(post => post.postId === parseInt(match.params.postId, 10));
 
   return (
     <div style={styles.postPageContainer}>
@@ -34,3 +33,5 @@ export const PostPage = ({ match }) => {
     </div>
   )
 }
+
+export default PostPage;

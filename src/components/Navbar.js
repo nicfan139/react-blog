@@ -2,7 +2,7 @@ import React from 'react';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
 import Typography from 'material-ui/Typography';
-import { SimpleMenu } from './menu';
+import SimpleMenu from './SimpleMenu';
 import { Link } from 'react-router-dom';
 
 const FontAwesome = require('react-fontawesome');
@@ -11,7 +11,8 @@ const styles = {
   navbarContainer: {
     width: "100vw",
     position: "fixed",
-    top: 0
+    top: 0,
+    zIndex: 100
   },
   flex: {
     flex: 1,
@@ -32,7 +33,7 @@ const styles = {
   }
 };
 
-export function NavBar(props) {
+const Navbar = props => {
   return (
     <div style={styles.navbarContainer}>
       <AppBar position="static">
@@ -54,3 +55,5 @@ export function NavBar(props) {
     </div>
   );
 }
+
+export default Navbar;

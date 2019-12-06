@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Banner = (props) => {
+const Banner = (props) => {
   const bannerTitle = props.title
   const bannerImage = props.background
 
@@ -28,3 +28,5 @@ export const Banner = (props) => {
     </div>
   )
 }
+
+export default Banner;

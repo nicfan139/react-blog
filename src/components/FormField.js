@@ -15,7 +15,7 @@ const styles = theme => ({
   },
 });
 
-export class FormField extends React.Component {
+class FormField extends React.Component {
 
   handleChange = name => event => {
     this.setState({
